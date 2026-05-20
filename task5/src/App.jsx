@@ -1,17 +1,17 @@
 import { useState } from 'react';
 
 const initialFormData = {
-  fullName: 'Balaji Sivakumar',
-  jobTitle: 'Software Engineer',
-  email: 'balaji022212@gmail.com',
-  phone: '9345355312',
-  city: 'Coimbatore',
-  state: 'Tamil Nadu',
-  zipCode: '641004',
-  address: 'Sri Ramakrishna Engineering College area, Coimbatore, Tamil Nadu',
-  linkedIn: 'https://linkedin.com/in/balaji0212',
-  github: 'https://github.com/balaji-0212',
-  skills: 'Python, Data Analytics, SQL, React, HTML, CSS, Git',
+  fullName: '',
+  jobTitle: '',
+  email: '',
+  phone: '',
+  city: '',
+  state: '',
+  zipCode: '',
+  address: '',
+  linkedIn: '',
+  github: '',
+  skills: '',
   password: '',
   confirmPassword: ''
 };
