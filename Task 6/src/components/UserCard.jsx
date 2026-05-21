@@ -9,6 +9,7 @@ function getInitials(name) {
 
 function UserCard({ user }) {
   const websiteUrl = `https://${user.website}`;
+  const phoneHref = user.phone.replace(/\s/g, '');
 
   return (
     <article className="user-card">
@@ -32,7 +33,7 @@ function UserCard({ user }) {
         <div>
           <dt>Phone</dt>
           <dd>
-            <a href={`tel:${user.phone}`}>{user.phone}</a>
+            <a href={`tel:${phoneHref}`}>{user.phone}</a>
           </dd>
         </div>
         <div>

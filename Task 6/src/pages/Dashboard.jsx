@@ -5,8 +5,29 @@ import Hero from '../components/Hero.jsx';
 import Navbar from '../components/Navbar.jsx';
 import StatusMessage from '../components/StatusMessage.jsx';
 import UserCard from '../components/UserCard.jsx';
+import indianUserProfiles from '../data/indianUserProfiles.js';
 
 const USERS_API_URL = 'https://jsonplaceholder.typicode.com/users';
+
+function makeIndianUserDirectory(apiUsers) {
+  return apiUsers.map((apiUser, index) => {
+    const profile = indianUserProfiles[index % indianUserProfiles.length];
+
+    return {
+      ...apiUser,
+      ...profile,
+      id: apiUser.id,
+      company: {
+        ...apiUser.company,
+        ...profile.company
+      },
+      address: {
+        ...apiUser.address,
+        ...profile.address
+      }
+    };
+  });
+}
 
 function Dashboard() {
   const [users, setUsers] = useState([]);
@@ -30,7 +51,7 @@ function Dashboard() {
         }
 
         const userData = await response.json();
-        setUsers(userData);
+        setUsers(makeIndianUserDirectory(userData));
       } catch (error) {
         if (error.name !== 'AbortError') {
           setErrorMessage(error.message || 'Something went wrong while fetching users.');
@@ -57,11 +78,11 @@ function Dashboard() {
 
         <section className="users-section" id="users" aria-labelledby="users-title">
           <div className="section-heading">
-            <p className="eyebrow">API users</p>
-            <h2 id="users-title">JSONPlaceholder Directory</h2>
+            <p className="eyebrow">Indian API users</p>
+            <h2 id="users-title">India Professional Directory</h2>
             <p>
-              Live user profiles with contact, company, and location details displayed as
-              responsive dashboard cards.
+              Live API records presented with realistic Indian contact, company, and
+              location details for a polished professional dashboard.
             </p>
           </div>
 
