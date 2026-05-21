@@ -1,6 +1,6 @@
 function Hero({ userCount }) {
   const dashboardMetrics = [
-    { value: userCount || '10', label: 'Indian Profiles' },
+    { value: userCount || '10', label: 'API Profiles' },
     { value: '9', label: 'Core Skills' },
     { value: 'ECE', label: 'Engineering Focus' }
   ];
@@ -9,11 +9,10 @@ function Hero({ userCount }) {
     <section className="hero-section" id="top" aria-labelledby="hero-title">
       <div className="hero-content">
         <p className="eyebrow">Task 6 - Fetch Data from API</p>
-        <h1 id="hero-title">Balaji S India User Dashboard</h1>
+        <h1 id="hero-title">Balaji S User Dashboard</h1>
         <p>
-          A modern React interface for API-driven user cards with India-focused
-          professional details, designed around Balaji S, Electronics and Communication
-          Engineer.
+          A modern React interface for API-driven user cards with realistic professional
+          details, designed around Balaji S, Electronics and Communication Engineer.
         </p>
 
         <div className="hero-actions" aria-label="Page shortcuts">

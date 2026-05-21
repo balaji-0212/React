@@ -6,7 +6,7 @@ Modern React application for fetching and presenting user data from the JSONPlac
 
 - Fetches users from `https://jsonplaceholder.typicode.com/users`
 - Uses `useEffect` and `useState`
-- Presents API records with realistic India-focused profile details
+- Presents API records with realistic professional profile details
 - Loading and error states
 - Responsive card layout
 - Portfolio-style navbar, hero, about section, and footer

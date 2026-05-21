@@ -1,4 +1,4 @@
-const indianUserProfiles = [
+const professionalProfiles = [
   {
     name: 'Arjun Menon',
     username: 'arjun.menon',
@@ -91,4 +91,4 @@ const indianUserProfiles = [
   }
 ];
 
-export default indianUserProfiles;
+export default professionalProfiles;

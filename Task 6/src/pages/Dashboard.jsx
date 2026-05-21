@@ -5,13 +5,13 @@ import Hero from '../components/Hero.jsx';
 import Navbar from '../components/Navbar.jsx';
 import StatusMessage from '../components/StatusMessage.jsx';
 import UserCard from '../components/UserCard.jsx';
-import indianUserProfiles from '../data/indianUserProfiles.js';
+import professionalProfiles from '../data/professionalProfiles.js';
 
 const USERS_API_URL = 'https://jsonplaceholder.typicode.com/users';
 
-function makeIndianUserDirectory(apiUsers) {
+function makeProfessionalUserDirectory(apiUsers) {
   return apiUsers.map((apiUser, index) => {
-    const profile = indianUserProfiles[index % indianUserProfiles.length];
+    const profile = professionalProfiles[index % professionalProfiles.length];
 
     return {
       ...apiUser,
@@ -51,7 +51,7 @@ function Dashboard() {
         }
 
         const userData = await response.json();
-        setUsers(makeIndianUserDirectory(userData));
+        setUsers(makeProfessionalUserDirectory(userData));
       } catch (error) {
         if (error.name !== 'AbortError') {
           setErrorMessage(error.message || 'Something went wrong while fetching users.');
@@ -78,11 +78,11 @@ function Dashboard() {
 
         <section className="users-section" id="users" aria-labelledby="users-title">
           <div className="section-heading">
-            <p className="eyebrow">Indian API users</p>
-            <h2 id="users-title">India Professional Directory</h2>
+            <p className="eyebrow">API users</p>
+            <h2 id="users-title">Professional Contact Directory</h2>
             <p>
-              Live API records presented with realistic Indian contact, company, and
-              location details for a polished professional dashboard.
+              Live API records presented with realistic contact, company, and location
+              details for a polished professional dashboard.
             </p>
           </div>
 
