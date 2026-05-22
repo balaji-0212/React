@@ -1,0 +1,7 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="480" rx="160" fill="#14363A"/>
+  <circle cx="240" cy="190" r="82" fill="#F7C59F"/>
+  <path d="M93 406C111 326 167 282 240 282C313 282 369 326 387 406C350 442 301 462 240 462C179 462 130 442 93 406Z" fill="#2AB7A9"/>
+  <path d="M173 185C184 125 216 95 269 96C307 97 335 130 334 171C314 158 290 151 262 150C230 149 200 161 173 185Z" fill="#203238"/>
+  <text x="240" y="423" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#FFF8EF">BS</text>
+</svg>
