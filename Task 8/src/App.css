@@ -1,0 +1,317 @@
+.app {
+  --page-bg: #eef3f8;
+  --surface: #ffffff;
+  --surface-soft: #f6f8fb;
+  --text: #142033;
+  --muted: #667085;
+  --border: #d8e0eb;
+  --accent: #126b7a;
+  --accent-strong: #0e5561;
+  --accent-soft: #d8f1f4;
+  --input-bg: #ffffff;
+  --shadow: 0 24px 70px rgba(20, 32, 51, 0.14);
+  --focus-ring: 0 0 0 4px rgba(18, 107, 122, 0.18);
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(32, 136, 151, 0.16), transparent 34rem),
+    linear-gradient(135deg, var(--page-bg), #f8fbfd);
+  transition:
+    background 280ms ease,
+    color 280ms ease;
+}
+
+.app--dark {
+  --page-bg: #101820;
+  --surface: #17212d;
+  --surface-soft: #202b38;
+  --text: #edf4f7;
+  --muted: #aab6c4;
+  --border: #334252;
+  --accent: #65d3df;
+  --accent-strong: #8ae4ed;
+  --accent-soft: rgba(101, 211, 223, 0.14);
+  --input-bg: #111a24;
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+  --focus-ring: 0 0 0 4px rgba(101, 211, 223, 0.18);
+  background:
+    radial-gradient(circle at top right, rgba(101, 211, 223, 0.14), transparent 32rem),
+    linear-gradient(135deg, #101820, #182431);
+}
+
+.app__shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.header__eyebrow,
+.form-card__label {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.header h1,
+.form-card h2 {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.05;
+}
+
+.header h1 {
+  max-width: 760px;
+  font-size: clamp(2.35rem, 5vw, 4.75rem);
+}
+
+.header p {
+  max-width: 640px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 8px 16px 8px 8px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(20, 32, 51, 0.12);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 220ms ease,
+    background 220ms ease,
+    color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 16px 36px rgba(20, 32, 51, 0.18);
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.theme-toggle__track {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition:
+    background 220ms ease,
+    border-color 220ms ease;
+}
+
+.theme-toggle__thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(20, 32, 51, 0.24);
+  transition:
+    transform 220ms ease,
+    background 220ms ease;
+}
+
+.app--dark .theme-toggle__thumb {
+  transform: translateX(20px);
+}
+
+.form-card {
+  padding: 32px;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  transition:
+    background 260ms ease,
+    border-color 260ms ease,
+    box-shadow 260ms ease;
+}
+
+.form-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-card h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.form-card__badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 13px;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.profile-form {
+  margin-top: 28px;
+}
+
+.input-fields {
+  display: grid;
+  gap: 28px;
+}
+
+.input-group {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.input-group legend {
+  width: 100%;
+  margin-bottom: 16px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.input-group__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.field {
+  display: grid;
+  min-width: 0;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.field:has(textarea) {
+  grid-column: 1 / -1;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  color: var(--text);
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(20, 32, 51, 0.06);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 220ms ease,
+    color 220ms ease;
+}
+
+.field input {
+  min-height: 48px;
+  padding: 0 15px;
+}
+
+.field textarea {
+  min-height: 118px;
+  padding: 14px 15px;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.field input:hover,
+.field textarea:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+@media (max-width: 760px) {
+  .app__shell {
+    width: min(100% - 24px, 1120px);
+    padding: 28px 0;
+  }
+
+  .header,
+  .form-card__header {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    font-size: 2.45rem;
+  }
+
+  .theme-toggle {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .form-card {
+    padding: 22px;
+    border-radius: 8px;
+  }
+
+  .input-group__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .app__shell {
+    width: min(100% - 18px, 1120px);
+  }
+
+  .header h1 {
+    font-size: 2.1rem;
+  }
+
+  .form-card {
+    padding: 18px;
+  }
+
+  .form-card__badge {
+    width: 100%;
+    justify-content: center;
+  }
+}
