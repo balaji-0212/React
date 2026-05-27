@@ -15,9 +15,9 @@ function Home() {
           <p className="eyebrow">React Router DOM Portfolio</p>
           <h1>Routing that presents Balaji Sivakumar as a modern software engineer.</h1>
           <p className="hero-text">
-            A professional single-page React project built for Task 10, using
-            BrowserRouter, Routes, Route, NavLink, Outlet, and nested service
-            routes with resume-driven content.
+            A professional single-page React project using BrowserRouter,
+            Routes, Route, NavLink, Outlet, and nested service routes with
+            resume-driven content.
           </p>
           <div className="hero-actions">
             <Link className="primary-button" to="/services">
