@@ -12,12 +12,12 @@ function Home() {
     <section className="page hero-page">
       <div className="hero-grid">
         <div className="hero-copy">
-          <p className="eyebrow">React Router DOM Portfolio</p>
-          <h1>Routing that presents Balaji Sivakumar as a modern software engineer.</h1>
+          <p className="eyebrow">Software Engineer Portfolio</p>
+          <h1>Building reliable software with clean logic and data-driven insight.</h1>
           <p className="hero-text">
-            A professional single-page React project using BrowserRouter,
-            Routes, Route, NavLink, Outlet, and nested service routes with
-            resume-driven content.
+            I design, develop, and optimize practical applications with a strong
+            foundation in Python, SQL, analytics, debugging, and maintainable
+            software engineering practices.
           </p>
           <div className="hero-actions">
             <Link className="primary-button" to="/services">

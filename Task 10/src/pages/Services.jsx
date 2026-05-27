@@ -5,7 +5,7 @@ const services = [
   {
     title: 'Web Development',
     path: 'web-development',
-    description: 'Responsive, accessible web interfaces using React, HTML, CSS, routing, and clean component structure.',
+    description: 'Responsive, accessible web interfaces using React, HTML, CSS, and clean component structure.',
   },
   {
     title: 'App Development',
@@ -24,10 +24,10 @@ function Services() {
     <section className="page content-page">
       <div className="section-heading">
         <p className="eyebrow">Services</p>
-        <h1>Nested Routing Showcase</h1>
+        <h1>Professional Services</h1>
         <p>
-          Select a service to render nested content inside this same page through
-          React Router DOM's Outlet component.
+          Explore focused services across web interfaces, application workflows,
+          and user-centered digital experiences.
         </p>
       </div>
 
