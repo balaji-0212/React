@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import profilePhoto from '../assets/balaji-profile.jpg';
 
 const navigationItems = [
   { label: 'Home', path: '/' },
@@ -18,7 +19,9 @@ function Navbar() {
     <header className="site-header">
       <nav className="navbar" aria-label="Main navigation">
         <NavLink to="/" className="brand" onClick={closeMenu}>
-          <span className="brand-mark">BS</span>
+          <span className="brand-mark">
+            <img src={profilePhoto} alt="Balaji Sivakumar" />
+          </span>
           <span>
             <strong>Balaji Sivakumar</strong>
             <small>Software Engineer</small>

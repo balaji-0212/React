@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import profilePhoto from '../assets/balaji-profile.jpg';
 
 const highlights = [
   'Python development',
@@ -31,7 +32,7 @@ function Home() {
 
         <aside className="hero-panel" aria-label="Profile snapshot">
           <div className="profile-orbit">
-            <span>BS</span>
+            <img src={profilePhoto} alt="Balaji Sivakumar" />
           </div>
           <h2>Software Engineer</h2>
           <p>
