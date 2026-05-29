@@ -24,11 +24,15 @@ function UserCard({ user }) {
       aria-label={`View details for ${user.name}`}
     >
       <div className="user-avatar" aria-hidden="true">
-        {user.name
-          .split(' ')
-          .map((part) => part.charAt(0))
-          .join('')
-          .slice(0, 2)}
+        {user.picture ? (
+          <img src={user.picture} alt="" />
+        ) : (
+          user.name
+            .split(' ')
+            .map((part) => part.charAt(0))
+            .join('')
+            .slice(0, 2)
+        )}
       </div>
 
       <div className="user-card-content">

@@ -80,11 +80,15 @@ function UserDetails() {
     <section className="details-page">
       <div className="details-header">
         <div className="user-avatar large" aria-hidden="true">
-          {user.name
-            .split(' ')
-            .map((part) => part.charAt(0))
-            .join('')
-            .slice(0, 2)}
+          {user.picture ? (
+            <img src={user.picture} alt="" />
+          ) : (
+            user.name
+              .split(' ')
+              .map((part) => part.charAt(0))
+              .join('')
+              .slice(0, 2)
+          )}
         </div>
         <div>
           <p className="eyebrow">User #{user.id}</p>

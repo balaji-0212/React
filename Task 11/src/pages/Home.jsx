@@ -6,9 +6,9 @@ function Home() {
       <div className="hero-section">
         <div className="hero-copy">
           <p className="eyebrow">React Router</p>
-          <h1>useParams Hook with Indian User API</h1>
+          <h1>useParams Hook with API Integration</h1>
           <p className="hero-description">
-            A focused React project that combines dynamic routing with fetched Indian user data.
+            A focused React project that combines dynamic routing with live user profile data.
             Select a user, pass the ID through the URL, and load the matching profile with React
             Router.
           </p>

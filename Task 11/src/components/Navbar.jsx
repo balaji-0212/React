@@ -5,7 +5,7 @@ function Navbar() {
     <header className="navbar">
       <NavLink to="/" className="brand" aria-label="useParams API home">
         <span className="brand-mark">ID</span>
-        <span>Indian Users API</span>
+        <span>User Directory</span>
       </NavLink>
 
       <nav className="nav-links" aria-label="Primary navigation">
