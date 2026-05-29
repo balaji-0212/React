@@ -142,6 +142,34 @@ h2 {
   font-weight: 500;
 }
 
+.contact-row,
+.action-row,
+.skills-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.contact-row a {
+  border-bottom: 2px solid rgba(20, 108, 117, 0.22);
+  color: #17404a;
+  font-weight: 800;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.contact-row a:hover {
+  border-color: #146c75;
+  color: #0e5c64;
+}
+
+.location-text {
+  color: #536171;
+  font-weight: 800;
+}
+
 .primary-button,
 .secondary-button {
   display: inline-flex;
@@ -229,6 +257,22 @@ h2 {
   gap: 1.5rem;
   border-top: 1px solid rgba(83, 97, 113, 0.16);
   padding-top: 2rem;
+}
+
+.skills-strip {
+  border-top: 1px solid rgba(83, 97, 113, 0.16);
+  padding-top: 2rem;
+}
+
+.skills-strip span {
+  border: 1px solid rgba(20, 108, 117, 0.2);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #17404a;
+  font-family: "Space Grotesk", Manrope, sans-serif;
+  font-weight: 700;
+  padding: 0.65rem 0.9rem;
+  box-shadow: 0 10px 26px rgba(42, 62, 82, 0.06);
 }
 
 .info-band section {
@@ -476,6 +520,11 @@ h2 {
   }
 
   .user-card {
+    flex-direction: column;
+  }
+
+  .action-row {
+    align-items: flex-start;
     flex-direction: column;
   }
 }
