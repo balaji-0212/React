@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
   return (
     <header className="navbar">
-      <NavLink to="/" className="brand" aria-label="Task 11 home">
-        <span className="brand-mark">11</span>
-        <span>useParams API</span>
+      <NavLink to="/" className="brand" aria-label="useParams API home">
+        <span className="brand-mark">ID</span>
+        <span>Indian Users API</span>
       </NavLink>
 
       <nav className="nav-links" aria-label="Primary navigation">

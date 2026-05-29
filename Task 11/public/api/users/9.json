@@ -1,0 +1,19 @@
+{
+  "id": 9,
+  "name": "Arjun Rao",
+  "username": "arjun.rao",
+  "email": "arjun.rao@example.in",
+  "phone": "+91 99080 77889",
+  "website": "arjunrao.in",
+  "company": {
+    "name": "Vizag Maritime Analytics",
+    "catchPhrase": "Clear logistics intelligence for port operations",
+    "bs": "supply chain intelligence"
+  },
+  "address": {
+    "street": "Beach Road",
+    "suite": "House 27, Ocean View Colony",
+    "city": "Visakhapatnam",
+    "zipcode": "530003"
+  }
+}

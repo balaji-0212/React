@@ -1,0 +1,19 @@
+{
+  "id": 5,
+  "name": "Vikram Singh",
+  "username": "vikram.singh",
+  "email": "vikram.singh@example.in",
+  "phone": "+91 98711 22334",
+  "website": "vikramsingh.in",
+  "company": {
+    "name": "Delhi Growth Partners",
+    "catchPhrase": "Data-backed growth for ambitious brands",
+    "bs": "customer acquisition analytics"
+  },
+  "address": {
+    "street": "Connaught Place",
+    "suite": "Office 705, Regal Building",
+    "city": "New Delhi",
+    "zipcode": "110001"
+  }
+}

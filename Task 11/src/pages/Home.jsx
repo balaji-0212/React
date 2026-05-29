@@ -5,12 +5,12 @@ function Home() {
     <section className="home-page">
       <div className="hero-section">
         <div className="hero-copy">
-          <p className="eyebrow">Task 11</p>
-          <h1>useParams Hook with API Integration</h1>
+          <p className="eyebrow">React Router</p>
+          <h1>useParams Hook with Indian User API</h1>
           <p className="hero-description">
-            A focused React project that combines dynamic routing with live JSONPlaceholder API
-            data. Select a user, pass the ID through the URL, and load the matching profile with
-            React Router.
+            A focused React project that combines dynamic routing with fetched Indian user data.
+            Select a user, pass the ID through the URL, and load the matching profile with React
+            Router.
           </p>
           <Link className="primary-button" to="/users">
             View Users

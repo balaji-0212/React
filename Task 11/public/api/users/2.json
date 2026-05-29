@@ -1,0 +1,19 @@
+{
+  "id": 2,
+  "name": "Priya Nair",
+  "username": "priya.nair",
+  "email": "priya.nair@example.in",
+  "phone": "+91 98470 11223",
+  "website": "priyanair.co.in",
+  "company": {
+    "name": "Cochin Cloud Works",
+    "catchPhrase": "Reliable cloud support for modern teams",
+    "bs": "managed cloud operations"
+  },
+  "address": {
+    "street": "Marine Drive",
+    "suite": "Apt 8B, Lake View Residency",
+    "city": "Kochi",
+    "zipcode": "682031"
+  }
+}

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://jsonplaceholder.typicode.com/users';
+const API_BASE_URL = '/api/users';
 
 async function requestJson(url) {
   const response = await fetch(url);
@@ -11,7 +11,7 @@ async function requestJson(url) {
 }
 
 export async function getUsers() {
-  const users = await requestJson(API_BASE_URL);
+  const users = await requestJson(`${API_BASE_URL}.json`);
   return Array.isArray(users) ? users : [];
 }
 
@@ -22,7 +22,7 @@ export async function getUserById(id) {
     throw new Error('Invalid user ID. Please choose a valid user from the list.');
   }
 
-  const user = await requestJson(`${API_BASE_URL}/${parsedId}`);
+  const user = await requestJson(`${API_BASE_URL}/${parsedId}.json`);
 
   if (!user || !user.id) {
     throw new Error('User not found. Please choose a valid user from the list.');

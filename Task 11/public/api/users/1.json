@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "name": "Aarav Sharma",
+  "username": "aarav.sharma",
+  "email": "aarav.sharma@example.in",
+  "phone": "+91 98765 43210",
+  "website": "aaravsharma.in",
+  "company": {
+    "name": "Bharat Digital Labs",
+    "catchPhrase": "Building simple tools for growing Indian businesses",
+    "bs": "digital workflow consulting"
+  },
+  "address": {
+    "street": "MG Road",
+    "suite": "Flat 402, Orchid Heights",
+    "city": "Bengaluru",
+    "zipcode": "560001"
+  }
+}

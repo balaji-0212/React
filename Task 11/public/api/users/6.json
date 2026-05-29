@@ -1,0 +1,19 @@
+{
+  "id": 6,
+  "name": "Meera Reddy",
+  "username": "meera.reddy",
+  "email": "meera.reddy@example.in",
+  "phone": "+91 97000 55667",
+  "website": "meerareddy.co.in",
+  "company": {
+    "name": "Hyderabad Health Tech",
+    "catchPhrase": "Accessible digital care for local communities",
+    "bs": "health platform operations"
+  },
+  "address": {
+    "street": "Banjara Hills Road 12",
+    "suite": "Villa 18, Green Enclave",
+    "city": "Hyderabad",
+    "zipcode": "500034"
+  }
+}

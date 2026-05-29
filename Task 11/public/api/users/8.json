@@ -1,0 +1,19 @@
+{
+  "id": 8,
+  "name": "Sneha Patil",
+  "username": "sneha.patil",
+  "email": "sneha.patil@example.in",
+  "phone": "+91 98220 33445",
+  "website": "snehapatil.dev",
+  "company": {
+    "name": "Pune Learning Systems",
+    "catchPhrase": "Skill-building platforms for career-ready learners",
+    "bs": "education technology services"
+  },
+  "address": {
+    "street": "FC Road",
+    "suite": "Flat 303, Shivneri Apartments",
+    "city": "Pune",
+    "zipcode": "411004"
+  }
+}

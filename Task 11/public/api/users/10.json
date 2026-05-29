@@ -1,0 +1,19 @@
+{
+  "id": 10,
+  "name": "Nisha Gupta",
+  "username": "nisha.gupta",
+  "email": "nisha.gupta@example.in",
+  "phone": "+91 98290 44557",
+  "website": "nishagupta.co.in",
+  "company": {
+    "name": "Jaipur Craft Commerce",
+    "catchPhrase": "Digital commerce for traditional makers",
+    "bs": "marketplace enablement"
+  },
+  "address": {
+    "street": "MI Road",
+    "suite": "Shop 14, Pink City Arcade",
+    "city": "Jaipur",
+    "zipcode": "302001"
+  }
+}
