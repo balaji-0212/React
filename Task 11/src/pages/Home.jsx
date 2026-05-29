@@ -5,12 +5,11 @@ function Home() {
     <section className="home-page">
       <div className="hero-section">
         <div className="hero-copy">
-          <p className="eyebrow">React Router</p>
-          <h1>useParams Hook with API Integration</h1>
+          <p className="eyebrow">Profile Explorer</p>
+          <h1>User Directory</h1>
           <p className="hero-description">
-            A focused React project that combines dynamic routing with live user profile data.
-            Select a user, pass the ID through the URL, and load the matching profile with React
-            Router.
+            Browse user profiles, open any person from the list, and view their contact, company,
+            and address information on a dedicated details page.
           </p>
           <Link className="primary-button" to="/users">
             View Users
@@ -35,10 +34,10 @@ function Home() {
 
       <div className="info-band">
         <section>
-          <h2>useParams Hook</h2>
+          <h2>Dynamic Routing</h2>
           <p>
-            The details page reads the dynamic <code>id</code> segment from <code>/users/:id</code>
-            with <code>useParams()</code>, then uses that value to request the selected user.
+            The details page reads the dynamic <code>id</code> segment from <code>/users/:id</code>,
+            then uses that value to request and display the selected user.
           </p>
         </section>
 
