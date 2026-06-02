@@ -6,24 +6,25 @@ function Home() {
     <main className="page-main home-page">
       <section className="home-hero">
         <div className="hero-copy">
-          <span className="eyebrow">React Router DOM</span>
-          <h1>Pagination using useSearchParams</h1>
+          <span className="eyebrow">Software Engineer</span>
+          <h1>Balaji Sivakumar</h1>
           <p>
-            This project demonstrates pagination using React Router DOM and
-            useSearchParams.
+            Detail-oriented software engineer from Coimbatore with hands-on
+            experience in Python, SQL, data analytics, and building reliable,
+            maintainable software solutions.
           </p>
           <Link className="primary-action" to="/users?page=1">
             <Search size={19} aria-hidden="true" />
-            Go To Users
+            View Users
             <ArrowRight size={19} aria-hidden="true" />
           </Link>
         </div>
 
         <div className="hero-preview" aria-hidden="true">
-          <span>page=1</span>
-          <span>page=2</span>
-          <span>page=3</span>
-          <span>page=4</span>
+          <span>Python & SQL</span>
+          <span>Data Analytics</span>
+          <span>Power BI & Excel</span>
+          <span>GitHub Actions & AWS</span>
         </div>
       </section>
     </main>

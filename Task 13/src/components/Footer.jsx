@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="site-footer">
-      <p>Pagination using useSearchParams</p>
+      <p>Balaji Sivakumar | Software Engineer | Coimbatore, Tamil Nadu</p>
     </footer>
   );
 }
