@@ -5,11 +5,11 @@ function Navbar() {
   return (
     <header className="site-header">
       <nav className="navbar" aria-label="Main navigation">
-        <NavLink className="brand" to="/" aria-label="Task 13 home">
+        <NavLink className="brand" to="/" aria-label="Pagination home">
           <span className="brand-icon">
             <ListChecks size={21} aria-hidden="true" />
           </span>
-          <span>Task 13</span>
+          <span>Pagination</span>
         </NavLink>
 
         <div className="nav-links">

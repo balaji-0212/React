@@ -6,7 +6,7 @@ function Home() {
     <main className="page-main home-page">
       <section className="home-hero">
         <div className="hero-copy">
-          <span className="eyebrow">Task 13</span>
+          <span className="eyebrow">React Router DOM</span>
           <h1>Pagination using useSearchParams</h1>
           <p>
             This project demonstrates pagination using React Router DOM and
