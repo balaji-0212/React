@@ -117,7 +117,7 @@ h1 {
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(8.5rem, 1fr));
+  grid-template-columns: repeat(4, minmax(7.5rem, 1fr));
   gap: 0.75rem;
 }
 
@@ -160,9 +160,10 @@ h1 {
 
 .user-table {
   width: 100%;
-  min-width: 820px;
+  min-width: 1240px;
   border-collapse: separate;
   border-spacing: 0;
+  table-layout: fixed;
 }
 
 .user-table th,
@@ -170,7 +171,6 @@ h1 {
   padding: 1rem 1.1rem;
   text-align: left;
   vertical-align: middle;
-  white-space: nowrap;
 }
 
 .user-table th {
@@ -206,11 +206,31 @@ h1 {
   border-bottom: 1px solid #e6ebf1;
   color: #445168;
   font-size: 0.94rem;
+  line-height: 1.45;
 }
 
 .name-cell {
   color: #172033;
   font-weight: 800;
+}
+
+.company-cell,
+.company-note {
+  display: block;
+}
+
+.company-cell {
+  color: #172033;
+  font-weight: 800;
+}
+
+.company-note {
+  margin-top: 0.2rem;
+  overflow: hidden;
+  color: #718096;
+  font-size: 0.78rem;
+  font-weight: 650;
+  text-overflow: ellipsis;
 }
 
 .user-table a {

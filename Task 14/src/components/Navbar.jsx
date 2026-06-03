@@ -8,8 +8,8 @@ function Navbar({ totalUsers }) {
           <Database size={22} />
         </span>
         <div>
-          <span className="brand-name">Data Desk</span>
-          <span className="brand-subtitle">Contacts overview</span>
+          <span className="brand-name">Organisation Directory</span>
+          <span className="brand-subtitle">Contacts and company records</span>
         </div>
       </div>
 
