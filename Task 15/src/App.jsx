@@ -6,6 +6,19 @@ import './App.css';
 
 const API_URL = 'https://jsonplaceholder.typicode.com/users';
 
+const indianNames = [
+  'Aarav Sharma',
+  'Diya Patel',
+  'Vihaan Reddy',
+  'Ananya Iyer',
+  'Arjun Mehta',
+  'Ishita Verma',
+  'Kabir Rao',
+  'Meera Nair',
+  'Rohan Gupta',
+  'Saanvi Joshi'
+];
+
 const emptyForm = {
   name: '',
   email: ''
@@ -36,9 +49,9 @@ function App() {
       }
 
       const users = await response.json();
-      const formattedRecords = users.map(({ id, name, email }) => ({
+      const formattedRecords = users.map(({ id, email }, index) => ({
         id,
-        name,
+        name: indianNames[index % indianNames.length],
         email
       }));
 
