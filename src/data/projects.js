@@ -1,0 +1,113 @@
+export const categoryRoutes = [
+  { label: 'Featured', slug: 'featured', match: 'featured' },
+  { label: 'Web Development', slug: 'web-development', match: 'web' },
+  { label: 'Data Science', slug: 'data-science', match: 'data' },
+  { label: 'Embedded Systems', slug: 'embedded-systems', match: 'embedded' },
+];
+
+export const projects = [
+  {
+    id: 'bank-loan-report-dashboard',
+    title: 'Bank Loan Report Dashboard',
+    year: '2025',
+    category: 'data',
+    featured: true,
+    type: 'Data Engineering',
+    summary:
+      'Power BI and SQL Server reporting system for loan performance, approval ratios, borrower segments, default risk, and portfolio KPIs.',
+    impact: 'Improved risk visibility through reusable SQL transformations and DAX-driven KPI monitoring.',
+    technologies: ['Power BI', 'SQL Server', 'DAX', 'Excel', 'ETL'],
+    metrics: ['Loan KPIs', 'Risk segmentation', 'Approval analysis'],
+  },
+  {
+    id: 'sales-profit-analytics-dashboard',
+    title: 'Sales and Profit Analytics Dashboard',
+    year: '2025',
+    category: 'data',
+    featured: true,
+    type: 'Analytics',
+    summary:
+      'Interactive Excel analytics dashboard for sales, profit, category trends, regional performance, and year-over-year growth.',
+    impact: 'Automated refresh cycles with Power Query and reduced repeated manual reporting effort.',
+    technologies: ['Excel', 'Power Query', 'Pivot Tables', 'Data Cleaning'],
+    metrics: ['Regional trends', 'Category analysis', 'YoY growth'],
+  },
+  {
+    id: 'emotionsense-ai',
+    title: 'EmotionSense AI',
+    year: '2025',
+    category: 'data',
+    featured: true,
+    type: 'AI System',
+    summary:
+      'Real-time facial emotion analytics pipeline using a CNN model, OpenCV video preprocessing, and Flask inference APIs.',
+    impact: 'Delivered calibrated multi-class emotion recognition with model performance summaries and real-time inference.',
+    technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'Flask'],
+    metrics: ['CNN pipeline', 'Real-time video', 'API inference'],
+  },
+  {
+    id: 'portfolio-command-center',
+    title: 'Portfolio Command Center',
+    year: '2026',
+    category: 'web',
+    featured: true,
+    type: 'Frontend',
+    summary:
+      'Modern React interface for presenting engineering work with accessible navigation, animated content, and API-backed GitHub activity.',
+    impact: 'Creates a polished professional presence that connects software, data, and hardware strengths.',
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Axios'],
+    metrics: ['Responsive UI', 'Dark mode', 'API data'],
+  },
+  {
+    id: 'iot-sensor-observability',
+    title: 'IoT Sensor Observability Platform',
+    year: '2025',
+    category: 'embedded',
+    featured: false,
+    type: 'IoT',
+    summary:
+      'Concept-to-prototype telemetry workflow for collecting sensor readings, validating anomalies, and surfacing device health indicators.',
+    impact: 'Bridges embedded data capture with practical reporting for maintenance and reliability decisions.',
+    technologies: ['IoT', 'Python', 'MySQL', 'Data Validation', 'Power BI'],
+    metrics: ['Telemetry checks', 'Device health', 'Alert-ready data'],
+  },
+  {
+    id: 'verilog-fault-tolerant-matrix-core',
+    title: 'Fault-Tolerant Matrix Computation Core',
+    year: '2025',
+    category: 'embedded',
+    featured: true,
+    type: 'Hardware Research',
+    summary:
+      'Verilog-oriented hardware architecture for matrix computation with error-detection concepts presented at IEEE ICCCNT 2025.',
+    impact: 'Explores reliable computation patterns for embedded and digital systems.',
+    technologies: ['Verilog', 'Digital Systems', 'Error Detection', 'ECE'],
+    metrics: ['IEEE ICCCNT', 'Fault tolerance', 'Matrix compute'],
+  },
+  {
+    id: 'python-data-quality-toolkit',
+    title: 'Python Data Quality Toolkit',
+    year: '2025',
+    category: 'data',
+    featured: false,
+    type: 'Python Automation',
+    summary:
+      'Reusable validation scripts for finding duplicate rows, missing values, inconsistent formats, and recurring reporting defects.',
+    impact: 'Helped analysts trust source data before preparing KPI reports and dashboards.',
+    technologies: ['Python', 'Pandas', 'SQL', 'Jupyter Notebook'],
+    metrics: ['Duplicate checks', 'Missing values', 'Issue tracking'],
+  },
+  {
+    id: 'full-stack-kpi-reporter',
+    title: 'Full Stack KPI Reporter',
+    year: '2026',
+    category: 'web',
+    featured: false,
+    type: 'Full Stack',
+    summary:
+      'Dashboard-ready web application concept for collecting operational inputs, validating records, and publishing KPI summaries.',
+    impact: 'Combines frontend ergonomics with data engineering habits for reliable reporting workflows.',
+    technologies: ['React', 'Python', 'SQL', 'MySQL', 'GitHub'],
+    metrics: ['Validated forms', 'KPI tables', 'Clean routing'],
+  },
+];
