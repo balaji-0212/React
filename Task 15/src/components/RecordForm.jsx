@@ -22,7 +22,7 @@ function RecordForm({
             id="name"
             name="name"
             onChange={onChange}
-            placeholder="Jane Cooper"
+            placeholder="Aarav"
             type="text"
             value={formData.name}
           />
@@ -41,7 +41,7 @@ function RecordForm({
             id="email"
             name="email"
             onChange={onChange}
-            placeholder="jane@example.com"
+            placeholder="aarav@example.in"
             type="email"
             value={formData.email}
           />
