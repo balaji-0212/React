@@ -9,20 +9,28 @@ export function useApi(url) {
   useEffect(() => {
     if (!url) return undefined;
     const controller = new AbortController();
+    let active = true;
     setLoading(true);
     setError('');
 
     axios
       .get(url, { signal: controller.signal })
-      .then((response) => setData(response.data))
+      .then((response) => {
+        if (active) setData(response.data);
+      })
       .catch((requestError) => {
-        if (requestError.name !== 'CanceledError') {
+        if (active && requestError.name !== 'CanceledError') {
           setError(requestError.message || 'Unable to load data');
         }
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (active) setLoading(false);
+      });
 
-    return () => controller.abort();
+    return () => {
+      active = false;
+      controller.abort();
+    };
   }, [url]);
 
   return { data, error, loading };

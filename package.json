@@ -10,14 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
+    "@vitejs/plugin-react": "^5.2.0",
     "axios": "latest",
     "framer-motion": "latest",
-    "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "latest",
-    "react-router-dom": "latest"
+    "react-router-dom": "latest",
+    "vite": "^7.3.5"
   },
   "devDependencies": {
     "@eslint/js": "latest",
