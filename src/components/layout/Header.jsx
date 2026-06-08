@@ -19,19 +19,19 @@ export default function Header() {
     `focus-ring rounded px-3 py-2 text-sm font-semibold transition ${
       isActive
         ? 'bg-ocean text-white shadow-glow'
-        : 'text-slate-700 hover:bg-white/60 hover:text-ocean dark:text-slate-200 dark:hover:bg-white/10'
+        : 'text-slate-200 hover:bg-white/10 hover:text-white'
     }`;
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/20 bg-white/60 backdrop-blur-xl dark:bg-slate-950/62">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-slate-950/88 shadow-[0_20px_60px_rgba(2,6,23,0.24)] backdrop-blur-2xl">
       <nav className="container-pad flex h-20 items-center justify-between" aria-label="Primary">
         <NavLink to="/" className="focus-ring flex items-center gap-3 rounded">
-          <span className="grid h-11 w-11 place-items-center rounded bg-slate-950 text-base font-black text-sky-300 dark:bg-white dark:text-slate-950">
+          <span className="grid h-11 w-11 place-items-center rounded bg-gradient-to-br from-ocean via-mint to-violet text-base font-black text-white shadow-glow">
             BS
           </span>
           <span>
-            <span className="block font-display text-lg font-bold">Balaji Sivakumar</span>
-            <span className="block text-xs font-medium text-slate-500 dark:text-slate-400">
+            <span className="block font-display text-lg font-bold text-white">Balaji Sivakumar</span>
+            <span className="block text-xs font-semibold text-sky-200">
               Software Engineer
             </span>
           </span>
@@ -49,7 +49,7 @@ export default function Header() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="focus-ring grid h-11 w-11 place-items-center rounded border border-slate-200 bg-white/70 text-slate-700 transition hover:text-ocean dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-100"
+            className="focus-ring grid h-11 w-11 place-items-center rounded border border-white/10 bg-white/10 text-slate-100 transition hover:bg-white/15 hover:text-sky-200"
             aria-label="Toggle color theme"
           >
             {isDark ? <FiSun /> : <FiMoon />}
@@ -57,7 +57,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setOpen((value) => !value)}
-            className="focus-ring grid h-11 w-11 place-items-center rounded border border-slate-200 bg-white/70 text-slate-700 md:hidden dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-100"
+            className="focus-ring grid h-11 w-11 place-items-center rounded border border-white/10 bg-white/10 text-slate-100 md:hidden"
             aria-label="Toggle navigation"
             aria-expanded={open}
           >
@@ -68,7 +68,7 @@ export default function Header() {
 
       {open && (
         <div className="container-pad pb-4 md:hidden">
-          <div className="glass grid gap-2 rounded p-3">
+          <div className="grid gap-2 rounded border border-white/10 bg-slate-950/92 p-3 shadow-soft backdrop-blur-2xl">
             {navItems.map((item) => (
               <NavLink key={item.to} to={item.to} onClick={() => setOpen(false)} className={linkClass}>
                 {item.label}
